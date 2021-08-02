@@ -1,7 +1,21 @@
+import { io } from 'socket.io-client';
+
 const App = () => {
     return (
-        <div>
-            hi
+        <div className='game'>
+            <div className='square-grid'>
+                <div className='northwest box'></div>
+                <div className='north box'></div>
+                <div className='northeast box'></div>
+
+                <div className='west box'></div>
+                <div className='center box'></div>
+                <div className='east box'></div>
+
+                <div className='southwest box'></div>
+                <div className='south box'></div>
+                <div className='southeast box'></div>
+            </div>
         </div>
     );
 };

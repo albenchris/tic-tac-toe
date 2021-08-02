@@ -1,0 +1,49 @@
+:root {
+    --light: hsl(0, 0%, 91%);
+    --dark: hsl(0, 0%, 18%);
+}
+
+body {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.game {
+    background-color: var(--light);
+    height: 70vw;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-grid {
+    background-color: var(--dark);
+    width: 95%;
+    height: 95%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.box {
+    background-color: var(--light);
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .game {
+        height: 90vw;
+        width: 90vw;
+    }
+
+    .square-grid {
+        gap: 4px;
+    }
+}
