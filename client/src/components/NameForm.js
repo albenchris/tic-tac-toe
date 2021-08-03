@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../css/form.css';
 
 const NameForm = () => {
     const [errorMessage, setErrorMessage] = useState('');
@@ -24,29 +25,19 @@ const NameForm = () => {
     };
 
     return (
-        <div className='form-container'>
-
-            <form id='player-form' onSubmit={handleSubmit}>
-                <label htmlFor='name'>What is your name?</label>
-
-                <input
-                    type='text'
-                    name='name'
-                    id='name'
-                    placeholder='name'
-                    defaultValue={name}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                />
-                <button type='submit'>Play!</button>
-
-
-                <div className='error-message'>
-                    {errorMessage}
-                </div>
-            </form>
-
-        </div>
+        <form id='player-form' onSubmit={handleSubmit}>
+            <label htmlFor='name'>What is your name?</label>
+            <input
+                type='text'
+                name='name'
+                id='name'
+                placeholder={errorMessage}
+                defaultValue={name}
+                onChange={handleChange}
+                onBlur={handleBlur}
+            />
+            <button type='submit'>Play!</button>
+        </form>
     );
 };
 
