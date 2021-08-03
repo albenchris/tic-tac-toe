@@ -1,13 +1,18 @@
 :root {
+    --primary: hsl(56, 75%, 48%);
+
     --light: hsl(0, 0%, 91%);
     --dark: hsl(0, 0%, 18%);
 
     --x: hsl(12, 100%, 29%);
     --o: hsl(202, 100%, 30%);
+
+    --danger: hsla(357, 100%, 62%, 0.568);
 }
 
 * {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
 }
 
 body {

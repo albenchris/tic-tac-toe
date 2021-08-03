@@ -1,5 +1,33 @@
 #player-form {
     display: flex;
     flex-direction: column;
-    width: 141px;
+    align-items: center;
+    width: 285px;
+}
+
+#player-form label {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#name {
+    height: 30px;
+    width: 220px;
+    background-color: var(--dark);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    margin: 3px 0 4px 0;
+    text-align: center;
+}
+
+#name::placeholder {
+    color: var(--danger);
+}
+
+#name-button {
+    background-color: var(--primary);
+    color: var(--dark);
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
 }

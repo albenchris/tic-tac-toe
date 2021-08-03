@@ -36,7 +36,7 @@ const NameForm = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
             />
-            <button type='submit'>Play!</button>
+            <button id='name-button' type='submit'>Play!</button>
         </form>
     );
 };
