@@ -7,11 +7,23 @@
 }
 
 body {
+    color: var(--light);
     background-color: var(--dark);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 98vh;
+}
+
+form {
+    width: 100%;
+
+
+}
+
+.form-container {
+    width: 100%;
+    height: 200px;
 }
 
 .game {
@@ -23,6 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .square-grid {

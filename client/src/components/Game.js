@@ -10,16 +10,12 @@ const Game = () => {
                 <div className='northeast box'></div>
 
                 <div className='west box'></div>
-                <div className='center box'>
-                    <X />
-                </div>
+                <div className='center box'></div>
                 <div className='east box'></div>
 
                 <div className='southwest box'></div>
                 <div className='south box'></div>
-                <div className='southeast box'>
-                    <O />
-                </div>
+                <div className='southeast box'></div>
             </div>
         </div>
     );
