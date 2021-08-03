@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { io } from 'socket.io-client';
 import '../css/form.css';
 
 const NameForm = () => {
@@ -36,7 +37,13 @@ const NameForm = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
             />
-            <button id='name-button' type='submit'>Play!</button>
+            <button
+                id='name-button'
+                type='submit'
+                onClick={handleSubmit}
+            >
+                Play!
+            </button>
         </form>
     );
 };
