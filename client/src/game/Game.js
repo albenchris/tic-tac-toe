@@ -1,5 +1,5 @@
-import X from './X';
-import O from './O';
+import X from './parts/X';
+import O from './parts/O';
 import '../css/game.css';
 
 const Game = () => {
