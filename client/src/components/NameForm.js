@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { io } from 'socket.io-client';
 import '../css/form.css';
 
 const NameForm = () => {
